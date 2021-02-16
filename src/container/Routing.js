@@ -15,8 +15,15 @@ const sidemenus = [
     },
     {
       id: 3,
-      path: '/todo',
-      name: 'Todo',
+      path: '/movies',
+      name: 'Movie',
+      exact: true,
+      component: null
+    },
+    {
+      id: 4,
+      path: '/rating',
+      name: 'Rating',
       exact: true,
       component: null
     }

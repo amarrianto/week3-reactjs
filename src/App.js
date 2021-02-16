@@ -4,13 +4,11 @@ import MainLayout from "./container/MainLayout";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  
-    return (
-      <BrowserRouter>
-        <MainLayout />
-      </BrowserRouter>
-    );
-  }
-
+  return (
+    <BrowserRouter>
+      <MainLayout />
+    </BrowserRouter>
+  );
+}
 
 export default App;

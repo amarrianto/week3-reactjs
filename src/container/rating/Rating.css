@@ -1,0 +1,69 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+}
+.top-popular {
+  display: flex;
+  background: #0e2f44;
+  border: 1px solid #008080;
+  margin: 0 12px 10px 1px;
+  width: 750px;
+  justify-content: flex-start;
+}
+img {
+  width: 10em;
+  vertical-align: middle;
+}
+.logo {
+  width: 10em;
+  margin: 0;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #0e2f44;
+  color: #ffffff;
+  font-family: "Jaldi", sans-serif;
+
+  padding: 1rem;
+  height: auto;
+}
+.vote {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: space-between;
+  text-transform: initial;
+}
+.vote > span * {
+  margin-left: 0.5rem;
+}
+.vote > span a {
+  cursor: pointer;
+}
+.chevron {
+  background: transparent;
+  color: #fff68f;
+  padding: 1px 2px 0 0;
+  width: 50px;
+}
+.title-rating {
+  font-size: 0.55rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.title-rating > h2 {
+  margin-top: 0;
+  color: #fef65b;
+}
+.title-rating p {
+  font-size: 0.65rem;
+  line-height: 1.9;
+
+  text-transform: initial;
+  text-align: justify;
+  color: #ffffff;
+}
