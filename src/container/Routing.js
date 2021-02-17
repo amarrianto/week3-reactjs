@@ -26,6 +26,13 @@ const sidemenus = [
       name: 'Rating',
       exact: true,
       component: null
+    },
+    {
+      id: 5,
+      path: '/student',
+      name: 'Student',
+      exact: true,
+      component: null
     }
   ];
 

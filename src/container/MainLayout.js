@@ -12,6 +12,7 @@ import Error404 from './pages/Error404';
 import { Switch, Route } from 'react-router-dom';
 import Movie from './movies/MovieList'
 import RatingList from './RatingList'
+import StudentList from './student/StudentList';
 
 const MainLayout = ()=>{
     return(
@@ -26,6 +27,7 @@ const MainLayout = ()=>{
                     <Route path="/list" component={List} exact/>
                     <Route path="/movies" component={Movie} exact/>
                     <Route path="/rating" component={RatingList} exact/>
+                    <Route path="/student" component={StudentList} exact/>
                     {/* <Route path="/order" component={Order} exact/> */}
                     {/* <Route component={Error404}/> */}
                 </Switch>
