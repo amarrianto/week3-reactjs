@@ -4,8 +4,9 @@ import { star, play } from 'react-icons-kit/fa/';
 import { Link } from 'react-router-dom';
 import './Movie.css'
 
+
 const Movie = (props)=>{
-    return (
+	return (
         <div className="card" style={{ backgroundImage: `url(./assets/images/${props.poster})`}}>
             <Link>
                 <div>

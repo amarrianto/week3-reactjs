@@ -39,6 +39,11 @@
             transform: scale(0.98);
 }
 
+.card:hover .detailSiswa {
+    padding-bottom: 50px;
+    opacity: 1;
+    transition: .5s;
+}
 
 .card .detailSiswa {
     display: inline-flex;

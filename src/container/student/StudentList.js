@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { studentData } from "./StudentData";
 import Student from "./Student";
+import { getSkillDesc } from '../api/apiClient'
 import "./Student.css";
 
 export default class StudentList extends Component {
@@ -61,6 +62,7 @@ export default class StudentList extends Component {
           students
             .filter(f => f.nama.toLowerCase().includes(search.toLowerCase()))
             .map(value => {
+              let skills = getSkillDesc(value.skill);
               return (
                 <Student
                   nim={value.nim}
@@ -68,6 +70,7 @@ export default class StudentList extends Component {
                   ipk={value.ipk}
                   kota={value.kota}
                   foto={value.foto}
+                  skills={skills.join(',')}
                 />)
             }))
             :
@@ -84,12 +87,14 @@ export default class StudentList extends Component {
                 }
               })
               .map(value => {
+                let skills = getSkillDesc(value.skill);
                 return (<Student
                     nim={value.nim}
                     nama={value.nama}
                     ipk={value.ipk}
                     kota={value.kota}
                     foto={value.foto}
+                    skills={skills.join(',')}
                   />)
               }))
             }
