@@ -14,6 +14,7 @@ import Movie from './movies/MovieList'
 import RatingList from './RatingList'
 import StudentList from './student/StudentList';
 import RatingStudent from './student/RatingStudent'
+import MovieDescription from './movies/MovieDescription'
 
 const MainLayout = ()=>{
     return(
@@ -26,6 +27,7 @@ const MainLayout = ()=>{
                     <Route path="/" component={Home} exact/>
                     <Route path="/counter" component={Counter} exact/>
                     <Route path="/list" component={List} exact/>
+                    <Route path="/movies/:id" component={MovieDescription} exact/>
                     <Route path="/movies" component={Movie} exact/>
                     <Route path="/rating" component={RatingList} exact/>
                     <Route path="/student" component={StudentList} exact/>
