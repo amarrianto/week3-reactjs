@@ -2,15 +2,26 @@ import React from 'react'
 import './Student.css'
 
 const Student = (props) => {
+
+    const handleLike = (studentNim) => {
+        props.onLike(studentNim);
+    };
+
     return (
         <div className="card" style={{ backgroundImage: `url(./assets/images/${props.foto})` }}>
             <div className="detailSiswa">
-            <h3>Nim : <span>{props.nim}</span></h3>
-            <h3>Nama : <span>{props.nama}</span></h3>
-            <h3>IPK : <span>{props.ipk}</span></h3>
-            <h3>Kota : <span>{props.kota}</span></h3>
+            Nim : {props.nim}<br/>
+            Nama : {props.nama}<br/>
+            IPK : {props.ipk}<br/>
+            Kota : {props.kota}<br/>
+            Vote : {props.vote}<br/>
 
             </div>
+            <center>
+            <button onClick={()=>handleLike(props.nim)}>
+                Vote me
+            </button>
+            </center>
         </div>
     )
 }

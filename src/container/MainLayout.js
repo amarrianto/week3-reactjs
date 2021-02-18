@@ -13,6 +13,7 @@ import { Switch, Route } from 'react-router-dom';
 import Movie from './movies/MovieList'
 import RatingList from './RatingList'
 import StudentList from './student/StudentList';
+import RatingStudent from './student/RatingStudent'
 
 const MainLayout = ()=>{
     return(
@@ -28,6 +29,7 @@ const MainLayout = ()=>{
                     <Route path="/movies" component={Movie} exact/>
                     <Route path="/rating" component={RatingList} exact/>
                     <Route path="/student" component={StudentList} exact/>
+                    <Route path="/ratingstudent" component={RatingStudent} exact/>
                     {/* <Route path="/order" component={Order} exact/> */}
                     {/* <Route component={Error404}/> */}
                 </Switch>
