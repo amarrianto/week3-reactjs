@@ -36,8 +36,15 @@ const sidemenus = [
     },
     {
       id: 6,
-      path: 'ratingstudent',
+      path: '/ratingstudent',
       name : 'Rating Student',
+      exat: true,
+      component: null
+    },
+    {
+      id: 7,
+      path: '/category',
+      name : 'Category',
       exat: true,
       component: null
     }

@@ -15,6 +15,7 @@ import RatingList from './RatingList'
 import StudentList from './student/StudentList';
 import RatingStudent from './student/RatingStudent'
 import MovieDescription from './movies/MovieDescription'
+import Category from '../crud/Category'
 
 const MainLayout = ()=>{
     return(
@@ -25,13 +26,15 @@ const MainLayout = ()=>{
             <div className="main-content">
                 <Switch>
                     <Route path="/" component={Home} exact/>
-                    <Route path="/counter" component={Counter} exact/>
-                    <Route path="/list" component={List} exact/>
-                    <Route path="/movies/:id" component={MovieDescription} exact/>
-                    <Route path="/movies" component={Movie} exact/>
-                    <Route path="/rating" component={RatingList} exact/>
-                    <Route path="/student" component={StudentList} exact/>
-                    <Route path="/ratingstudent" component={RatingStudent} exact/>
+                    <Route path="/counter" component={Counter}/>
+                    <Route path="/list" component={List}/>
+                    <Route path="/movies/:id" component={MovieDescription}/>
+                    <Route path="/movies" component={Movie}/>
+                    <Route path="/rating" component={RatingList}/>
+                    <Route path="/student" component={StudentList}/>
+                    <Route path="/ratingstudent" component={RatingStudent}/>
+                    <Route path="/category" component={Category}/>
+
                     {/* <Route path="/order" component={Order} exact/> */}
                     {/* <Route component={Error404}/> */}
                 </Switch>
