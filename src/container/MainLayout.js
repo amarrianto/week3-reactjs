@@ -16,6 +16,7 @@ import StudentList from './student/StudentList';
 import RatingStudent from './student/RatingStudent'
 import MovieDescription from './movies/MovieDescription'
 import Category from '../crud/Category'
+import SimpleForm from '../Form/SimpleForm'
 
 const MainLayout = ()=>{
     return(
@@ -34,6 +35,7 @@ const MainLayout = ()=>{
                     <Route path="/student" component={StudentList}/>
                     <Route path="/ratingstudent" component={RatingStudent}/>
                     <Route path="/category" component={Category}/>
+                    <Route path="/simple" component={SimpleForm}/>
 
                     {/* <Route path="/order" component={Order} exact/> */}
                     {/* <Route component={Error404}/> */}

@@ -47,6 +47,20 @@ const sidemenus = [
       name : 'Category',
       exat: true,
       component: null
+    },
+    {
+      id: 8,
+      path: '/form',
+      name : 'Form Input',
+      exat: true,
+      component: null
+    },
+    {
+      id: 9,
+      path: '/simple-form',
+      name : 'Simple Form',
+      exat: true,
+      component: null
     }
   ];
 
