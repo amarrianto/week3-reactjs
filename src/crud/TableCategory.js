@@ -36,7 +36,8 @@ export const TableCategory = (props) => {
               </tr>
             </thead>
             <tbody>
-              {props.category.length > 0 ? (
+              {
+              props.category.length > 0 ? (
                 props.category.map((category, index) => {
                   return (
                     <tr key={category.id}>

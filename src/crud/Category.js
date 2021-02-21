@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import {listCategory, deleteCategory} from './api/api-category';
-import {TableCategory} from './TableCategory'
+import {TableCategory} from './TableCategory';
 import AddEditForm from '../Form/AddEditForm';
 
 
 export default class Category extends Component {
-    // 1. declare regions[] state 
+    // 1. declare category[] state 
     state = {
         category: [],
         dataEditRow: null,

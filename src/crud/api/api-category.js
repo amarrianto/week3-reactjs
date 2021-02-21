@@ -11,7 +11,8 @@ const listCategory = async()=>{
 }
 //2.createRegion, gunakan variable data untuk di send ke backend
 // di backend, jangan lupa pake req.body.data, agar bisa di extract ke tiap attribute
-const createCategory = async (category) => {
+const create = async (category) => {
+  console.log(category);
     try {
         let response = await axios.post(`${apiURL}/api/category/`,{
           data : category
@@ -32,6 +33,7 @@ const createCategory = async (category) => {
   };
   
   const updateCategory = async (category) => {
+    console.log(category)
     try {
         let response = await axios.put(`${apiURL}/api/category/${category.cate_id}`,{
           data : category
@@ -42,4 +44,4 @@ const createCategory = async (category) => {
       }
   };
 
-export {listCategory, createCategory, deleteCategory, updateCategory}
+export {listCategory, create, deleteCategory, updateCategory}
